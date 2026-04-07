@@ -1,7 +1,12 @@
 aid: whole-foods-market
-url: https://raw.githubusercontent.com/api-evangelist/whole-foods-market/refs/heads/main/apis.yml
+url: 
+  https://raw.githubusercontent.com/api-evangelist/whole-foods-market/refs/heads/main/apis.yml
 modified: '2026-03-24'
 apis: []
 common:
   - type: Website
     url: https://www.whole-foods-market.com
+description: >-
+  Whole Foods Market is an American multinational supermarket chain owned by Amazon,
+  exclusively selling products free from hydrogenated fats and artificial colors,
+  flavors, and preservatives.
