@@ -1,0 +1,214 @@
+vocabulary:
+  name: Whole Foods Market Vocabulary
+  description: >-
+    Vocabulary and taxonomy for Whole Foods Market, an American supermarket chain
+    owned by Amazon specializing in natural and organic foods. Includes product
+    quality standards, certifications, EDI integration terms, and supplier vocabulary.
+  version: 1.0.0
+  created: '2026-05-03'
+  modified: '2026-05-03'
+  tags:
+    - Grocery
+    - Supermarket
+    - Organic
+    - Natural Foods
+    - Retail
+    - Amazon
+
+terms:
+  - term: Quality Standards
+    definition: >-
+      Whole Foods Market's strict ingredient and production standards that all products
+      must meet. These include prohibitions on artificial preservatives, colors,
+      flavors, sweeteners, and hydrogenated fats.
+    tags:
+      - Product Standards
+      - Compliance
+
+  - term: Unacceptable Ingredients
+    definition: >-
+      Whole Foods Market maintains a list of 200+ ingredients that are prohibited
+      from all products sold in their stores, including artificial colors, preservatives,
+      sweeteners, and hydrogenated oils.
+    tags:
+      - Product Standards
+      - Compliance
+
+  - term: Prime Discount
+    definition: >-
+      Special pricing available exclusively to Amazon Prime members at Whole Foods
+      Market stores, providing reduced prices on select products and weekly sale items.
+    tags:
+      - Pricing
+      - Amazon
+
+  - term: USDA Organic
+    definition: >-
+      Certification by the U.S. Department of Agriculture indicating products were
+      produced using approved organic farming methods without synthetic pesticides,
+      herbicides, or GMOs.
+    tags:
+      - Certification
+      - Organic
+
+  - term: Non-GMO Project Verified
+    definition: >-
+      Third-party certification from the Non-GMO Project verifying that products
+      meet strict standards for avoiding genetically modified organisms in ingredients.
+    tags:
+      - Certification
+      - Non-GMO
+
+  - term: Fair Trade Certified
+    definition: >-
+      Certification ensuring that products were produced with fair wages, safe
+      working conditions, and environmental sustainability for farmers and workers.
+    tags:
+      - Certification
+      - Sustainability
+
+  - term: EDI 850
+    definition: >-
+      Electronic Data Interchange document type 850: Purchase Order. Sent by Whole
+      Foods Market to suppliers to order products, including quantities, delivery dates,
+      and pricing.
+    tags:
+      - EDI
+      - Supplier Integration
+
+  - term: EDI 810
+    definition: >-
+      Electronic Data Interchange document type 810: Invoice. Sent by suppliers to
+      Whole Foods Market to bill for fulfilled purchase orders.
+    tags:
+      - EDI
+      - Supplier Integration
+
+  - term: EDI 856
+    definition: >-
+      Electronic Data Interchange document type 856: Advance Shipment Notice (ASN).
+      Sent by suppliers before shipment to notify Whole Foods Market of incoming
+      products, quantities, and expected delivery.
+    tags:
+      - EDI
+      - Supplier Integration
+
+  - term: EDI 855
+    definition: >-
+      Electronic Data Interchange document type 855: Purchase Order Acknowledgment.
+      Sent by suppliers to confirm receipt and acceptance of a Whole Foods Market
+      purchase order.
+    tags:
+      - EDI
+      - Supplier Integration
+
+  - term: Supplier Portal
+    definition: >-
+      Whole Foods Market's online portal where potential and existing suppliers can
+      register, submit product applications, and manage their supplier relationship.
+    tags:
+      - Supplier
+      - Portal
+
+  - term: Vendor Reporting Portal
+    definition: >-
+      A Whole Foods Market analytics portal powered by Amazon QuickSight that allows
+      suppliers to view sales performance, inventory, and other business metrics.
+    tags:
+      - Supplier
+      - Analytics
+      - Reporting
+
+  - term: Distribution Center
+    definition: >-
+      A regional Whole Foods Market facility that receives products from suppliers
+      and distributes them to nearby retail store locations.
+    tags:
+      - Supply Chain
+      - Logistics
+
+  - term: UPC
+    definition: >-
+      Universal Product Code. A 12-digit barcode identifier used to identify consumer
+      products. All products sold at Whole Foods must have a valid UPC.
+    tags:
+      - Product Identification
+      - Barcode
+
+  - term: EXIGIS Portal
+    definition: >-
+      A third-party compliance portal used by Whole Foods Market for supplier
+      certificate of insurance and compliance document management.
+    tags:
+      - Supplier
+      - Compliance
+
+  - term: Responsibly Grown
+    definition: >-
+      Whole Foods Market's produce rating system assessing farmers' practices for
+      pest management, farmworker welfare, water conservation, and soil health.
+    tags:
+      - Produce
+      - Sustainability
+      - Rating
+
+product-categories:
+  - Produce
+  - Meat
+  - Seafood
+  - Dairy And Eggs
+  - Frozen Foods
+  - Bakery
+  - Deli
+  - Floral
+  - Grocery
+  - Beer Wine And Spirits
+  - Health And Beauty
+  - Vitamins And Supplements
+  - Household Products
+  - Personal Care
+  - Pet Food And Care
+  - Coffee And Tea
+  - Snacks And Sweets
+  - Bread And Pasta
+  - Canned And Packaged Goods
+  - Beverages
+
+edi-document-types:
+  - code: "850"
+    name: Purchase Order
+    direction: Whole Foods to Supplier
+
+  - code: "855"
+    name: Purchase Order Acknowledgment
+    direction: Supplier to Whole Foods
+
+  - code: "856"
+    name: Advanced Shipment Notice
+    direction: Supplier to Whole Foods
+
+  - code: "810"
+    name: Invoice
+    direction: Supplier to Whole Foods
+
+  - code: "820"
+    name: Payment Order / Remittance Advice
+    direction: Whole Foods to Supplier
+
+  - code: "997"
+    name: Functional Acknowledgment
+    direction: Both
+
+certifications:
+  - USDA Organic
+  - Non-GMO Project Verified
+  - Gluten-Free Certified
+  - Vegan Certified
+  - Fair Trade Certified
+  - Rainforest Alliance Certified
+  - Marine Stewardship Council
+  - B Corp Certified
+  - Whole30 Approved
+  - Kosher Certified
+  - Halal Certified
+  - Animal Welfare Certified

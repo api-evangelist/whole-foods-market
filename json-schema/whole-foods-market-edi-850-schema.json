@@ -1,0 +1,105 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/whole-foods-market/main/json-schema/whole-foods-market-edi-850-schema.json",
+  "title": "Whole Foods Market EDI 850 Purchase Order",
+  "description": "EDI 850 Purchase Order document sent by Whole Foods Market to suppliers.",
+  "type": "object",
+  "properties": {
+    "purchaseOrderNumber": {
+      "type": "string",
+      "description": "Unique purchase order number assigned by Whole Foods Market."
+    },
+    "purchaseOrderDate": {
+      "type": "string",
+      "format": "date",
+      "description": "Date the purchase order was issued."
+    },
+    "requestedDeliveryDate": {
+      "type": "string",
+      "format": "date",
+      "description": "Requested delivery date to the distribution center or store."
+    },
+    "vendorNumber": {
+      "type": "string",
+      "description": "Whole Foods Market assigned vendor identification number."
+    },
+    "shipToLocation": {
+      "type": "object",
+      "description": "Shipping destination (distribution center or store).",
+      "properties": {
+        "locationId": {"type": "string"},
+        "name": {"type": "string"},
+        "address1": {"type": "string"},
+        "address2": {"type": "string"},
+        "city": {"type": "string"},
+        "state": {"type": "string"},
+        "postalCode": {"type": "string"},
+        "country": {"type": "string"}
+      }
+    },
+    "billToLocation": {
+      "type": "object",
+      "description": "Billing address for the purchase order."
+    },
+    "currency": {
+      "type": "string",
+      "default": "USD",
+      "description": "Currency code for the order (ISO 4217)."
+    },
+    "lineItems": {
+      "type": "array",
+      "description": "List of ordered products.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "lineNumber": {
+            "type": "integer",
+            "description": "Line item sequence number."
+          },
+          "upc": {
+            "type": "string",
+            "description": "Product UPC barcode."
+          },
+          "vendorItemNumber": {
+            "type": "string",
+            "description": "Vendor's internal item number."
+          },
+          "description": {
+            "type": "string",
+            "description": "Product description."
+          },
+          "orderedQuantity": {
+            "type": "integer",
+            "description": "Quantity ordered."
+          },
+          "unitOfMeasure": {
+            "type": "string",
+            "description": "Unit of measure for ordered quantity (EA, CS, etc.)."
+          },
+          "unitPrice": {
+            "type": "number",
+            "format": "float",
+            "description": "Unit price per item."
+          },
+          "lineTotal": {
+            "type": "number",
+            "format": "float",
+            "description": "Total line item amount."
+          }
+        },
+        "required": ["lineNumber", "upc", "orderedQuantity"]
+      }
+    },
+    "totalAmount": {
+      "type": "number",
+      "format": "float",
+      "description": "Total purchase order amount."
+    },
+    "specialInstructions": {
+      "type": "string",
+      "description": "Special handling or delivery instructions."
+    }
+  },
+  "required": ["purchaseOrderNumber", "purchaseOrderDate", "vendorNumber", "lineItems"],
+  "additionalProperties": true
+}

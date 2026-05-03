@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "gs1": "https://www.gs1.org/voc/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "name": "schema:name",
+    "description": "schema:description",
+    "url": "schema:url",
+    "brand": "schema:brand",
+    "image": "schema:image",
+    "Organization": "schema:Organization",
+    "GroceryStore": "schema:GroceryStore",
+    "Product": "schema:Product",
+    "FoodProduct": "schema:FoodProduct",
+    "Offer": "schema:Offer",
+    "Order": "schema:Order",
+    "NutritionInformation": "schema:NutritionInformation",
+    "gtin": "schema:gtin",
+    "gtin12": "schema:gtin12",
+    "gtin14": "schema:gtin14",
+    "sku": "schema:sku",
+    "price": "schema:price",
+    "priceCurrency": "schema:priceCurrency",
+    "category": "schema:category",
+    "countryOfOrigin": "schema:countryOfOrigin",
+    "servingSize": "schema:servingSize",
+    "calories": "schema:calories",
+    "fatContent": "schema:fatContent",
+    "sodiumContent": "schema:sodiumContent",
+    "carbohydrateContent": "schema:carbohydrateContent",
+    "proteinContent": "schema:proteinContent",
+    "ingredients": "schema:ingredients",
+    "certifications": {
+      "@id": "schema:hasCertification",
+      "@type": "@id"
+    },
+    "organic": {
+      "@id": "schema:additionalProperty",
+      "@type": "xsd:boolean"
+    },
+    "nonGMO": {
+      "@id": "schema:additionalProperty",
+      "@type": "xsd:boolean"
+    },
+    "allergens": {
+      "@id": "schema:allergyOrIntoleranceSource",
+      "@type": "xsd:string"
+    },
+    "availableAtOrFrom": "schema:availableAtOrFrom",
+    "primeDiscount": {
+      "@id": "schema:discount",
+      "@type": "xsd:decimal"
+    }
+  }
+}

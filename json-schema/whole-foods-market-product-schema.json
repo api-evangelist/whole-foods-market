@@ -1,0 +1,116 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/whole-foods-market/main/json-schema/whole-foods-market-product-schema.json",
+  "title": "Whole Foods Market Product",
+  "description": "A grocery product sold at Whole Foods Market meeting their quality and ingredient standards.",
+  "type": "object",
+  "properties": {
+    "upc": {
+      "type": "string",
+      "description": "Universal Product Code barcode identifier.",
+      "pattern": "^[0-9]{12,14}$"
+    },
+    "name": {
+      "type": "string",
+      "description": "Product name."
+    },
+    "brand": {
+      "type": "string",
+      "description": "Brand name of the product."
+    },
+    "description": {
+      "type": "string",
+      "description": "Product description."
+    },
+    "category": {
+      "type": "string",
+      "description": "Product category (e.g., Produce, Meat, Dairy, Frozen)."
+    },
+    "subcategory": {
+      "type": "string",
+      "description": "Product subcategory."
+    },
+    "price": {
+      "type": "number",
+      "format": "float",
+      "description": "Regular retail price."
+    },
+    "primePrice": {
+      "type": "number",
+      "format": "float",
+      "description": "Amazon Prime member discounted price."
+    },
+    "unit": {
+      "type": "string",
+      "description": "Unit of measure (each, lb, oz, etc.)."
+    },
+    "weight": {
+      "type": "number",
+      "format": "float",
+      "description": "Product weight in ounces."
+    },
+    "imageUrl": {
+      "type": "string",
+      "format": "uri",
+      "description": "URL to product image."
+    },
+    "certifications": {
+      "type": "array",
+      "description": "Quality and certification labels on the product.",
+      "items": {
+        "type": "string",
+        "enum": [
+          "USDA Organic",
+          "Non-GMO Project Verified",
+          "Gluten-Free",
+          "Vegan",
+          "Vegetarian",
+          "Fair Trade Certified",
+          "Kosher",
+          "Halal",
+          "Whole30 Approved",
+          "Rainforest Alliance Certified",
+          "Marine Stewardship Council",
+          "B Corp Certified"
+        ]
+      }
+    },
+    "ingredients": {
+      "type": "string",
+      "description": "Product ingredient list."
+    },
+    "allergens": {
+      "type": "array",
+      "description": "Allergen declarations.",
+      "items": {
+        "type": "string"
+      }
+    },
+    "nutritionFacts": {
+      "type": "object",
+      "description": "Nutritional information per serving.",
+      "properties": {
+        "servingSize": {"type": "string"},
+        "calories": {"type": "integer"},
+        "totalFat": {"type": "string"},
+        "sodium": {"type": "string"},
+        "totalCarbohydrate": {"type": "string"},
+        "protein": {"type": "string"}
+      }
+    },
+    "countryOfOrigin": {
+      "type": "string",
+      "description": "Country where the product was produced (ISO 3166 2-letter code)."
+    },
+    "available": {
+      "type": "boolean",
+      "description": "Whether the product is currently available."
+    },
+    "onSale": {
+      "type": "boolean",
+      "description": "Whether the product is currently on sale."
+    }
+  },
+  "required": ["name", "brand", "category"],
+  "additionalProperties": true
+}
