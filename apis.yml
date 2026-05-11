@@ -34,6 +34,8 @@ common:
     url: https://www.gocrisp.com/catalog/whole-foods-vendor-reporting-portal
   - type: Wikipedia
     url: https://en.wikipedia.org/wiki/Whole_Foods_Market
+  - type: Integrations
+    url: https://www.wholefoodsmarket.com/app
 notes: >-
   Whole Foods Market does not offer a public developer API. Supplier integrations
   use EDI (Electronic Data Interchange) with document types including Purchase Orders
@@ -48,6 +50,8 @@ artifacts:
     url: https://raw.githubusercontent.com/api-evangelist/whole-foods-market/main/json-ld/whole-foods-market-context.jsonld
   - type: Vocabulary
     url: https://raw.githubusercontent.com/api-evangelist/whole-foods-market/main/vocabulary/whole-foods-market-vocabulary.yml
+integrations:
+  - name: an Amazon company
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
