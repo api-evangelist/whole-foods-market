@@ -23,6 +23,8 @@ modified: '2026-05-03'
 specificationVersion: '0.19'
 apis: []
 common:
+  - type: DomainSecurity
+    url: security/whole-foods-market-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/whole-foods-market
   - type: Website
