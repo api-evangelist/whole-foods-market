@@ -7,6 +7,17 @@ description: >-
   Amazon Prime for delivery, pickup, and member discounts. Supplier integrations are
   handled through EDI (Electronic Data Interchange) and the Whole Foods Supplier Portal.
 type: Index
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
