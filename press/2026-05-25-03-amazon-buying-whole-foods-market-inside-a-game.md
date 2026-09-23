@@ -1,7 +1,9 @@
 ---
 title: 'Amazon Buying Whole Foods Market: Inside A Game- ...'
 url: https://www.constellationr.com/insights/news/amazon-buying-whole-foods-market-inside-game-changing-move-retail
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Whole Foods Market" press release artificial intelligence'
 position: 3
 source: serpapi-google

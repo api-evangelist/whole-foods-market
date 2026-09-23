@@ -1,7 +1,9 @@
 ---
 title: Whole Foods Market and Amazon unite for one-stop ...
 url: https://www.aboutamazon.com/news/retail/whole-foods-household-essentials-amazon
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Whole Foods Market" press release artificial intelligence'
 position: 4
 source: serpapi-google
